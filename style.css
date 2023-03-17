@@ -21,13 +21,13 @@ form {
     border-bottom: 2px solid #ddd;
 } */
 
-button {
+#addBtn {
     background-color: rebeccapurple;
     color: white;
     border: none;
     padding: 1.5rem;
     /* margin: 8px 0; */
-    margin-left: 4rem;
+    margin-left: 1rem;
     cursor: pointer;
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
@@ -36,6 +36,17 @@ button {
 
 button:hover {
     opacity: 0.8;
+}
+.delete-btn{
+    background-color: rebeccapurple;
+        color: white;
+        border: none;
+        padding: 1.5rem;
+        /* margin: 8px 0; */
+        margin-left: 5rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
 }
 
 /* ul {
@@ -95,9 +106,24 @@ h1{
 }
 .todos li{
     border-bottom: 1px solid #b5b5b5;
-    font-size: 2rem;
+    font-size:1.5rem;
     padding: 0.5rem;
+   
 }
 li:last-child {
     border-bottom: none;
+}
+@media(max-width:768px){
+h1 {
+        color: rgb(162, 92, 231);
+        text-align: center;
+        font-size: 4rem;
+        opacity: 0.4;
+    }
+
+    #form {
+        width: 70%;
+        margin: auto;
+        border: solid red;
+    }
 }

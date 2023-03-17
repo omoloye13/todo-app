@@ -11,6 +11,7 @@ function renderTodos() {
 		li.textContent = todos[i];
 		const deleteBtn = document.createElement("button");
 		deleteBtn.textContent = "Delete";
+		deleteBtn.classList.add("delete-btn");
 		deleteBtn.addEventListener("click", () => {
 			todos.splice(i, 1);
 			localStorage.setItem("todos", JSON.stringify(todos));
